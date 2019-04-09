@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+
+  <h2>{{ 'demo.title' | translate }}</h2>
+
+  <h3>Simple translations without parameters</h3>
+
+  <!-- translation: translation pipe -->
+  <p>{{ fromCode | translate }}</p>
+
+  <h3>Switching languages at runtime</h3>
+  <button (click)="useLanguage('en')">en</button>
+  <button (click)="useLanguage('de')">de</button>
+</div>
+
+<router-outlet></router-outlet>
